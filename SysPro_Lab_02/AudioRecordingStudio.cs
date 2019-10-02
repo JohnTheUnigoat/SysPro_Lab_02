@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SysPro_Lab_02
 {
-    class AudioRecordingStudio
+    class AudioRecordingStudio : ICloneable
     {
         // static fields //
 
@@ -20,10 +20,10 @@ namespace SysPro_Lab_02
 
         public int NumberOfWorkers { get; private set; }
 
-        public float TrackRecordCost { get; private set; }
-        public int TrackRecordDuration { get; private set; }
+        public float TrackRecordCost { get; set; }
+        public int TrackRecordDuration { get; set; }
 
-        public float WorkerWage { get; private set; }
+        public float WorkerWage { get; set; }
         public float TotalWorkersWage { get { return WorkerWage * NumberOfWorkers; } }
 
         public float AvailableMoney { get; private set; }
@@ -40,6 +40,15 @@ namespace SysPro_Lab_02
             Name = name;
             Adress = adress;
             AvailableMoney = initialMoney;
+        }
+
+        // money
+        public void Earn(float amount)
+        {
+            if (amount <= 0)
+                return;
+
+            AvailableMoney += amount;
         }
 
         // workers
@@ -105,6 +114,37 @@ namespace SysPro_Lab_02
         {
             a.DemolishRoom();
             return a;
+        }
+
+        public object Clone()
+        {
+            var clone = new AudioRecordingStudio(Name, Adress, AvailableMoney);
+            clone.NumberOfInstruments = NumberOfInstruments;
+            clone.NumberOfRooms = NumberOfRooms;
+            clone.NumberOfWorkers = NumberOfWorkers;
+            clone.TrackRecordCost = TrackRecordCost;
+            clone.TrackRecordDuration = TrackRecordDuration;
+            clone.WorkerWage = WorkerWage;
+
+            return clone;
+        }
+
+        public float this[int i]
+        {
+            get
+            {
+                switch (i)
+                {
+                    case 0:
+                        return WorkerWage;
+                    case 1:
+                        return TotalWorkersWage;
+                    case 2:
+                        return AvailableMoney;
+                    default:
+                        return 0;
+                }
+            }
         }
     }
 }
