@@ -42,6 +42,20 @@ namespace SysPro_Lab_02
             AvailableMoney = initialMoney;
         }
 
+        public AudioRecordingStudio(
+            string name,
+            string adress,
+            float initialMoney,
+            float recordCost,
+            int recordDuration)
+        {
+            Name = name;
+            Adress = adress;
+            AvailableMoney = initialMoney;
+            TrackRecordCost = recordCost;
+            TrackRecordDuration = recordDuration;
+        }
+
         // money
         public void Earn(float amount)
         {
@@ -116,6 +130,13 @@ namespace SysPro_Lab_02
             return a;
         }
 
+        // additional stuff
+
+        public override string ToString()
+        {
+            return Name + ' ' + Adress;
+        }
+
         public object Clone()
         {
             var clone = new AudioRecordingStudio(Name, Adress, AvailableMoney);
@@ -142,7 +163,7 @@ namespace SysPro_Lab_02
                     case 2:
                         return AvailableMoney;
                     default:
-                        return 0;
+                        throw new IndexOutOfRangeException();
                 }
             }
         }
