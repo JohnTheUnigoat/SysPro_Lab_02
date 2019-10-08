@@ -51,7 +51,6 @@
             this.SetRecordCost = new System.Windows.Forms.Button();
             this.SetAdress = new System.Windows.Forms.Button();
             this.SetName = new System.Windows.Forms.Button();
-            this.ButtonGetData = new System.Windows.Forms.Button();
             this.FieldWorkerWage = new System.Windows.Forms.NumericUpDown();
             this.FieldRecordDuration = new System.Windows.Forms.NumericUpDown();
             this.FieldRecordCost = new System.Windows.Forms.NumericUpDown();
@@ -67,7 +66,7 @@
             this.ButtonAdd = new System.Windows.Forms.Button();
             this.GroupWorkers = new System.Windows.Forms.GroupBox();
             this.ButonFire = new System.Windows.Forms.Button();
-            this.ButtonWorker = new System.Windows.Forms.Button();
+            this.ButtonHire = new System.Windows.Forms.Button();
             this.GroupInstruments = new System.Windows.Forms.GroupBox();
             this.ButtonThrowInstrument = new System.Windows.Forms.Button();
             this.ButtonAddInstruments = new System.Windows.Forms.Button();
@@ -81,7 +80,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ConstructorRecordDuration = new System.Windows.Forms.NumericUpDown();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.ComboBoxCreatedObjects = new System.Windows.Forms.ComboBox();
+            this.CreatedObjects = new System.Windows.Forms.ComboBox();
+            this.ButtonDelete = new System.Windows.Forms.Button();
             this.GroupData.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FieldWorkerWage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FieldRecordDuration)).BeginInit();
@@ -121,13 +121,12 @@
             this.GroupData.Controls.Add(this.SetRecordCost);
             this.GroupData.Controls.Add(this.SetAdress);
             this.GroupData.Controls.Add(this.SetName);
-            this.GroupData.Controls.Add(this.ButtonGetData);
             this.GroupData.Controls.Add(this.FieldWorkerWage);
             this.GroupData.Controls.Add(this.FieldRecordDuration);
             this.GroupData.Controls.Add(this.FieldRecordCost);
-            this.GroupData.Location = new System.Drawing.Point(6, 36);
+            this.GroupData.Location = new System.Drawing.Point(6, 39);
             this.GroupData.Name = "GroupData";
-            this.GroupData.Size = new System.Drawing.Size(277, 308);
+            this.GroupData.Size = new System.Drawing.Size(277, 304);
             this.GroupData.TabIndex = 0;
             this.GroupData.TabStop = false;
             this.GroupData.Text = "Data";
@@ -135,7 +134,7 @@
             // FieldRoomCount
             // 
             this.FieldRoomCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldRoomCount.Location = new System.Drawing.Point(101, 251);
+            this.FieldRoomCount.Location = new System.Drawing.Point(101, 266);
             this.FieldRoomCount.Name = "FieldRoomCount";
             this.FieldRoomCount.ReadOnly = true;
             this.FieldRoomCount.Size = new System.Drawing.Size(101, 20);
@@ -144,7 +143,7 @@
             // FieldInstrumentCount
             // 
             this.FieldInstrumentCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldInstrumentCount.Location = new System.Drawing.Point(101, 226);
+            this.FieldInstrumentCount.Location = new System.Drawing.Point(101, 241);
             this.FieldInstrumentCount.Name = "FieldInstrumentCount";
             this.FieldInstrumentCount.ReadOnly = true;
             this.FieldInstrumentCount.Size = new System.Drawing.Size(101, 20);
@@ -153,7 +152,7 @@
             // FieldMoney
             // 
             this.FieldMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldMoney.Location = new System.Drawing.Point(101, 200);
+            this.FieldMoney.Location = new System.Drawing.Point(101, 215);
             this.FieldMoney.Name = "FieldMoney";
             this.FieldMoney.ReadOnly = true;
             this.FieldMoney.Size = new System.Drawing.Size(101, 20);
@@ -162,7 +161,7 @@
             // FieldTotalWage
             // 
             this.FieldTotalWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldTotalWage.Location = new System.Drawing.Point(101, 175);
+            this.FieldTotalWage.Location = new System.Drawing.Point(101, 190);
             this.FieldTotalWage.Name = "FieldTotalWage";
             this.FieldTotalWage.ReadOnly = true;
             this.FieldTotalWage.Size = new System.Drawing.Size(101, 20);
@@ -171,7 +170,7 @@
             // FieldWorkers
             // 
             this.FieldWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldWorkers.Location = new System.Drawing.Point(101, 71);
+            this.FieldWorkers.Location = new System.Drawing.Point(101, 86);
             this.FieldWorkers.Name = "FieldWorkers";
             this.FieldWorkers.ReadOnly = true;
             this.FieldWorkers.Size = new System.Drawing.Size(101, 20);
@@ -180,7 +179,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 256);
+            this.label11.Location = new System.Drawing.Point(6, 271);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 43;
@@ -189,7 +188,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 230);
+            this.label12.Location = new System.Drawing.Point(6, 245);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 13);
             this.label12.TabIndex = 42;
@@ -198,7 +197,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 205);
+            this.label7.Location = new System.Drawing.Point(6, 220);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 41;
@@ -207,7 +206,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 179);
+            this.label8.Location = new System.Drawing.Point(6, 194);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 13);
             this.label8.TabIndex = 40;
@@ -216,7 +215,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 153);
+            this.label9.Location = new System.Drawing.Point(6, 168);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 13);
             this.label9.TabIndex = 39;
@@ -225,7 +224,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 127);
+            this.label10.Location = new System.Drawing.Point(6, 142);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 13);
             this.label10.TabIndex = 38;
@@ -234,7 +233,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 100);
+            this.label5.Location = new System.Drawing.Point(6, 115);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 37;
@@ -243,7 +242,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 75);
+            this.label6.Location = new System.Drawing.Point(6, 90);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 36;
@@ -252,7 +251,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 49);
+            this.label4.Location = new System.Drawing.Point(6, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 35;
@@ -261,7 +260,7 @@
             // FieldAdress
             // 
             this.FieldAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldAdress.Location = new System.Drawing.Point(101, 44);
+            this.FieldAdress.Location = new System.Drawing.Point(101, 59);
             this.FieldAdress.Name = "FieldAdress";
             this.FieldAdress.Size = new System.Drawing.Size(101, 20);
             this.FieldAdress.TabIndex = 34;
@@ -269,7 +268,7 @@
             // FieldName
             // 
             this.FieldName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldName.Location = new System.Drawing.Point(101, 19);
+            this.FieldName.Location = new System.Drawing.Point(101, 34);
             this.FieldName.Name = "FieldName";
             this.FieldName.Size = new System.Drawing.Size(101, 20);
             this.FieldName.TabIndex = 22;
@@ -277,7 +276,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 23);
+            this.label3.Location = new System.Drawing.Point(6, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 33;
@@ -286,7 +285,8 @@
             // SetWage
             // 
             this.SetWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetWage.Location = new System.Drawing.Point(209, 149);
+            this.SetWage.Enabled = false;
+            this.SetWage.Location = new System.Drawing.Point(209, 164);
             this.SetWage.Name = "SetWage";
             this.SetWage.Size = new System.Drawing.Size(62, 20);
             this.SetWage.TabIndex = 29;
@@ -296,7 +296,8 @@
             // SetRecordDuration
             // 
             this.SetRecordDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRecordDuration.Location = new System.Drawing.Point(209, 123);
+            this.SetRecordDuration.Enabled = false;
+            this.SetRecordDuration.Location = new System.Drawing.Point(209, 138);
             this.SetRecordDuration.Name = "SetRecordDuration";
             this.SetRecordDuration.Size = new System.Drawing.Size(62, 20);
             this.SetRecordDuration.TabIndex = 27;
@@ -306,7 +307,8 @@
             // SetRecordCost
             // 
             this.SetRecordCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRecordCost.Location = new System.Drawing.Point(209, 97);
+            this.SetRecordCost.Enabled = false;
+            this.SetRecordCost.Location = new System.Drawing.Point(209, 112);
             this.SetRecordCost.Name = "SetRecordCost";
             this.SetRecordCost.Size = new System.Drawing.Size(62, 20);
             this.SetRecordCost.TabIndex = 26;
@@ -316,7 +318,8 @@
             // SetAdress
             // 
             this.SetAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetAdress.Location = new System.Drawing.Point(209, 45);
+            this.SetAdress.Enabled = false;
+            this.SetAdress.Location = new System.Drawing.Point(209, 60);
             this.SetAdress.Name = "SetAdress";
             this.SetAdress.Size = new System.Drawing.Size(62, 20);
             this.SetAdress.TabIndex = 24;
@@ -326,22 +329,13 @@
             // SetName
             // 
             this.SetName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetName.Location = new System.Drawing.Point(209, 19);
+            this.SetName.Enabled = false;
+            this.SetName.Location = new System.Drawing.Point(209, 34);
             this.SetName.Name = "SetName";
             this.SetName.Size = new System.Drawing.Size(62, 20);
             this.SetName.TabIndex = 23;
             this.SetName.Text = "Set";
             this.SetName.UseVisualStyleBackColor = true;
-            // 
-            // ButtonGetData
-            // 
-            this.ButtonGetData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonGetData.Location = new System.Drawing.Point(102, 279);
-            this.ButtonGetData.Name = "ButtonGetData";
-            this.ButtonGetData.Size = new System.Drawing.Size(169, 23);
-            this.ButtonGetData.TabIndex = 18;
-            this.ButtonGetData.Text = "Get";
-            this.ButtonGetData.UseVisualStyleBackColor = true;
             // 
             // FieldWorkerWage
             // 
@@ -352,7 +346,7 @@
             0,
             0,
             0});
-            this.FieldWorkerWage.Location = new System.Drawing.Point(102, 149);
+            this.FieldWorkerWage.Location = new System.Drawing.Point(102, 164);
             this.FieldWorkerWage.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -371,7 +365,7 @@
             0,
             0,
             0});
-            this.FieldRecordDuration.Location = new System.Drawing.Point(102, 123);
+            this.FieldRecordDuration.Location = new System.Drawing.Point(102, 138);
             this.FieldRecordDuration.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -390,7 +384,7 @@
             0,
             0,
             0});
-            this.FieldRecordCost.Location = new System.Drawing.Point(102, 97);
+            this.FieldRecordCost.Location = new System.Drawing.Point(102, 112);
             this.FieldRecordCost.Maximum = new decimal(new int[] {
             5000,
             0,
@@ -413,12 +407,14 @@
             // 
             // ButtonEarn
             // 
+            this.ButtonEarn.Enabled = false;
             this.ButtonEarn.Location = new System.Drawing.Point(86, 20);
             this.ButtonEarn.Name = "ButtonEarn";
             this.ButtonEarn.Size = new System.Drawing.Size(71, 34);
             this.ButtonEarn.TabIndex = 12;
             this.ButtonEarn.Text = "Earn";
             this.ButtonEarn.UseVisualStyleBackColor = true;
+            this.ButtonEarn.Click += new System.EventHandler(this.ButtonEarn_Click);
             // 
             // UpDownEarn
             // 
@@ -443,7 +439,7 @@
             this.ConstructorName.Location = new System.Drawing.Point(334, 29);
             this.ConstructorName.Name = "ConstructorName";
             this.ConstructorName.Size = new System.Drawing.Size(112, 20);
-            this.ConstructorName.TabIndex = 3;
+            this.ConstructorName.TabIndex = 0;
             this.ConstructorName.Tag = "ConstructorName";
             // 
             // LabelName
@@ -469,7 +465,7 @@
             this.ConstructorAdress.Location = new System.Drawing.Point(334, 55);
             this.ConstructorAdress.Name = "ConstructorAdress";
             this.ConstructorAdress.Size = new System.Drawing.Size(112, 20);
-            this.ConstructorAdress.TabIndex = 5;
+            this.ConstructorAdress.TabIndex = 1;
             // 
             // ConstructorMoney
             // 
@@ -487,7 +483,7 @@
             0});
             this.ConstructorMoney.Name = "ConstructorMoney";
             this.ConstructorMoney.Size = new System.Drawing.Size(66, 20);
-            this.ConstructorMoney.TabIndex = 7;
+            this.ConstructorMoney.TabIndex = 2;
             this.ConstructorMoney.ThousandsSeparator = true;
             // 
             // LabelMoney
@@ -504,14 +500,15 @@
             this.ButtonAdd.Location = new System.Drawing.Point(612, 20);
             this.ButtonAdd.Name = "ButtonAdd";
             this.ButtonAdd.Size = new System.Drawing.Size(77, 69);
-            this.ButtonAdd.TabIndex = 9;
+            this.ButtonAdd.TabIndex = 5;
             this.ButtonAdd.Text = "Add";
             this.ButtonAdd.UseVisualStyleBackColor = true;
+            this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // GroupWorkers
             // 
             this.GroupWorkers.Controls.Add(this.ButonFire);
-            this.GroupWorkers.Controls.Add(this.ButtonWorker);
+            this.GroupWorkers.Controls.Add(this.ButtonHire);
             this.GroupWorkers.Location = new System.Drawing.Point(457, 105);
             this.GroupWorkers.Name = "GroupWorkers";
             this.GroupWorkers.Size = new System.Drawing.Size(238, 59);
@@ -521,21 +518,25 @@
             // 
             // ButonFire
             // 
+            this.ButonFire.Enabled = false;
             this.ButonFire.Location = new System.Drawing.Point(117, 20);
             this.ButonFire.Name = "ButonFire";
             this.ButonFire.Size = new System.Drawing.Size(115, 33);
             this.ButonFire.TabIndex = 14;
             this.ButonFire.Text = "Fire";
             this.ButonFire.UseVisualStyleBackColor = true;
+            this.ButonFire.Click += new System.EventHandler(this.ButonFire_Click);
             // 
-            // ButtonWorker
+            // ButtonHire
             // 
-            this.ButtonWorker.Location = new System.Drawing.Point(6, 20);
-            this.ButtonWorker.Name = "ButtonWorker";
-            this.ButtonWorker.Size = new System.Drawing.Size(105, 33);
-            this.ButtonWorker.TabIndex = 13;
-            this.ButtonWorker.Text = "Hire";
-            this.ButtonWorker.UseVisualStyleBackColor = true;
+            this.ButtonHire.Enabled = false;
+            this.ButtonHire.Location = new System.Drawing.Point(6, 20);
+            this.ButtonHire.Name = "ButtonHire";
+            this.ButtonHire.Size = new System.Drawing.Size(105, 33);
+            this.ButtonHire.TabIndex = 13;
+            this.ButtonHire.Text = "Hire";
+            this.ButtonHire.UseVisualStyleBackColor = true;
+            this.ButtonHire.Click += new System.EventHandler(this.ButtonHire_Click);
             // 
             // GroupInstruments
             // 
@@ -551,21 +552,25 @@
             // 
             // ButtonThrowInstrument
             // 
+            this.ButtonThrowInstrument.Enabled = false;
             this.ButtonThrowInstrument.Location = new System.Drawing.Point(257, 16);
             this.ButtonThrowInstrument.Name = "ButtonThrowInstrument";
             this.ButtonThrowInstrument.Size = new System.Drawing.Size(143, 33);
             this.ButtonThrowInstrument.TabIndex = 15;
             this.ButtonThrowInstrument.Text = "Throw away";
             this.ButtonThrowInstrument.UseVisualStyleBackColor = true;
+            this.ButtonThrowInstrument.Click += new System.EventHandler(this.ButtonThrowInstrument_Click);
             // 
             // ButtonAddInstruments
             // 
+            this.ButtonAddInstruments.Enabled = false;
             this.ButtonAddInstruments.Location = new System.Drawing.Point(85, 16);
             this.ButtonAddInstruments.Name = "ButtonAddInstruments";
             this.ButtonAddInstruments.Size = new System.Drawing.Size(144, 33);
             this.ButtonAddInstruments.TabIndex = 14;
             this.ButtonAddInstruments.Text = "Add";
             this.ButtonAddInstruments.UseVisualStyleBackColor = true;
+            this.ButtonAddInstruments.Click += new System.EventHandler(this.ButtonAddInstruments_Click);
             // 
             // UpDownInstruments
             // 
@@ -592,6 +597,7 @@
             // 
             // ButtonAddRoom
             // 
+            this.ButtonAddRoom.Enabled = false;
             this.ButtonAddRoom.Location = new System.Drawing.Point(6, 19);
             this.ButtonAddRoom.Name = "ButtonAddRoom";
             this.ButtonAddRoom.Size = new System.Drawing.Size(172, 33);
@@ -601,6 +607,7 @@
             // 
             // ButtonDemoishRoom
             // 
+            this.ButtonDemoishRoom.Enabled = false;
             this.ButtonDemoishRoom.Location = new System.Drawing.Point(219, 19);
             this.ButtonDemoishRoom.Name = "ButtonDemoishRoom";
             this.ButtonDemoishRoom.Size = new System.Drawing.Size(181, 33);
@@ -610,9 +617,10 @@
             // 
             // ButtonClone
             // 
-            this.ButtonClone.Location = new System.Drawing.Point(293, 302);
+            this.ButtonClone.Enabled = false;
+            this.ButtonClone.Location = new System.Drawing.Point(295, 307);
             this.ButtonClone.Name = "ButtonClone";
-            this.ButtonClone.Size = new System.Drawing.Size(396, 33);
+            this.ButtonClone.Size = new System.Drawing.Size(193, 33);
             this.ButtonClone.TabIndex = 17;
             this.ButtonClone.Text = "Clone";
             this.ButtonClone.UseVisualStyleBackColor = true;
@@ -642,7 +650,7 @@
             0});
             this.ConstructorRecordCost.Name = "ConstructorRecordCost";
             this.ConstructorRecordCost.Size = new System.Drawing.Size(66, 20);
-            this.ConstructorRecordCost.TabIndex = 18;
+            this.ConstructorRecordCost.TabIndex = 3;
             this.ConstructorRecordCost.ThousandsSeparator = true;
             // 
             // label2
@@ -669,23 +677,36 @@
             0});
             this.ConstructorRecordDuration.Name = "ConstructorRecordDuration";
             this.ConstructorRecordDuration.Size = new System.Drawing.Size(66, 20);
-            this.ConstructorRecordDuration.TabIndex = 20;
+            this.ConstructorRecordDuration.TabIndex = 4;
             this.ConstructorRecordDuration.ThousandsSeparator = true;
             // 
-            // ComboBoxCreatedObjects
+            // CreatedObjects
             // 
-            this.ComboBoxCreatedObjects.FormattingEnabled = true;
-            this.ComboBoxCreatedObjects.Location = new System.Drawing.Point(6, 12);
-            this.ComboBoxCreatedObjects.Name = "ComboBoxCreatedObjects";
-            this.ComboBoxCreatedObjects.Size = new System.Drawing.Size(277, 21);
-            this.ComboBoxCreatedObjects.TabIndex = 22;
+            this.CreatedObjects.FormattingEnabled = true;
+            this.CreatedObjects.Location = new System.Drawing.Point(6, 12);
+            this.CreatedObjects.Name = "CreatedObjects";
+            this.CreatedObjects.Size = new System.Drawing.Size(277, 21);
+            this.CreatedObjects.TabIndex = 22;
+            this.CreatedObjects.SelectedIndexChanged += new System.EventHandler(this.SelectedClassChanged);
+            // 
+            // ButtonDelete
+            // 
+            this.ButtonDelete.Enabled = false;
+            this.ButtonDelete.Location = new System.Drawing.Point(496, 307);
+            this.ButtonDelete.Name = "ButtonDelete";
+            this.ButtonDelete.Size = new System.Drawing.Size(193, 33);
+            this.ButtonDelete.TabIndex = 23;
+            this.ButtonDelete.Text = "Delete";
+            this.ButtonDelete.UseVisualStyleBackColor = true;
+            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(703, 356);
-            this.Controls.Add(this.ComboBoxCreatedObjects);
+            this.Controls.Add(this.ButtonDelete);
+            this.Controls.Add(this.CreatedObjects);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ConstructorRecordDuration);
             this.Controls.Add(this.label1);
@@ -745,7 +766,7 @@
         private System.Windows.Forms.Button ButtonEarn;
         private System.Windows.Forms.NumericUpDown UpDownEarn;
         private System.Windows.Forms.Button ButonFire;
-        private System.Windows.Forms.Button ButtonWorker;
+        private System.Windows.Forms.Button ButtonHire;
         private System.Windows.Forms.Button ButtonThrowInstrument;
         private System.Windows.Forms.Button ButtonAddInstruments;
         private System.Windows.Forms.NumericUpDown UpDownInstruments;
@@ -760,7 +781,6 @@
         private System.Windows.Forms.Button SetRecordCost;
         private System.Windows.Forms.Button SetAdress;
         private System.Windows.Forms.Button SetName;
-        private System.Windows.Forms.Button ButtonGetData;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown ConstructorRecordCost;
         private System.Windows.Forms.Label label2;
@@ -783,7 +803,8 @@
         private System.Windows.Forms.TextBox FieldWorkers;
         private System.Windows.Forms.TextBox FieldRoomCount;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.ComboBox ComboBoxCreatedObjects;
+        private System.Windows.Forms.ComboBox CreatedObjects;
+        private System.Windows.Forms.Button ButtonDelete;
     }
 }
 
