@@ -15,8 +15,8 @@ namespace SysPro_Lab_02
 
         // properties //
 
-        public string Name { get; }
-        public string Adress { get; }
+        public string Name { get; set; }
+        public string Adress { get; set; }
 
         public int NumberOfWorkers { get; private set; }
 

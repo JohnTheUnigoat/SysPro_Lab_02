@@ -147,6 +147,18 @@ namespace SysPro_Lab_02
             bindingSource.ResetBindings(false);
         }
 
+        private void ButtonClone_Click(object sender, EventArgs e)
+        {
+            var selected = (AudioRecordingStudio)CreatedObjects.SelectedItem;
+
+            var newStudio = (AudioRecordingStudio)selected.Clone();
+            newStudio.Name += " (copy)";
+
+            CreatedObjects.Items.Add(newStudio);
+
+            CreatedObjects.SelectedIndex = CreatedObjects.Items.Count - 1;
+        }
+
         private void ButtonDelete_Click(object sender, EventArgs e)
         {
             int previousIndex = CreatedObjects.SelectedIndex;
@@ -158,8 +170,10 @@ namespace SysPro_Lab_02
                 SwitchButtons();
                 CreatedObjects.Text = "";
             }
+            else if (previousIndex > 0)
+                CreatedObjects.SelectedIndex = previousIndex - 1;
             else
-                CreatedObjects.SelectedIndex = previousIndex;
+                CreatedObjects.SelectedIndex = 0;
         }
     }
 }

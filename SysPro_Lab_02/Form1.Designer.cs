@@ -626,6 +626,7 @@
             this.ButtonClone.TabIndex = 17;
             this.ButtonClone.Text = "Clone";
             this.ButtonClone.UseVisualStyleBackColor = true;
+            this.ButtonClone.Click += new System.EventHandler(this.ButtonClone_Click);
             // 
             // label1
             // 
