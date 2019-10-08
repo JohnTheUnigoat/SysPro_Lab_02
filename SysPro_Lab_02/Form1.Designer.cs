@@ -604,6 +604,7 @@
             this.ButtonAddRoom.TabIndex = 16;
             this.ButtonAddRoom.Text = "Add";
             this.ButtonAddRoom.UseVisualStyleBackColor = true;
+            this.ButtonAddRoom.Click += new System.EventHandler(this.ButtonAddRoom_Click);
             // 
             // ButtonDemoishRoom
             // 
@@ -614,6 +615,7 @@
             this.ButtonDemoishRoom.TabIndex = 15;
             this.ButtonDemoishRoom.Text = "Demolish";
             this.ButtonDemoishRoom.UseVisualStyleBackColor = true;
+            this.ButtonDemoishRoom.Click += new System.EventHandler(this.ButtonDemoishRoom_Click);
             // 
             // ButtonClone
             // 

@@ -122,12 +122,28 @@ namespace SysPro_Lab_02
             int count = (int)UpDownInstruments.Value;
             if (!((AudioRecordingStudio)CreatedObjects.SelectedItem).BuyInstruments(count))
                 MessageBox.Show("You don't have enough money!", "Error occured!");
+
             bindingSource.ResetBindings(false);
         }
 
         private void ButtonThrowInstrument_Click(object sender, EventArgs e)
         {
             ((AudioRecordingStudio)CreatedObjects.SelectedItem).ThrowAwayInstrument();
+            bindingSource.ResetBindings(false);
+        }
+
+        private void ButtonAddRoom_Click(object sender, EventArgs e)
+        {
+            if (!((AudioRecordingStudio)CreatedObjects.SelectedItem).AddRoom())
+                MessageBox.Show("You don't have enough money!", "Error occured!");
+
+            bindingSource.ResetBindings(false);
+        }
+
+        private void ButtonDemoishRoom_Click(object sender, EventArgs e)
+        {
+            ((AudioRecordingStudio)CreatedObjects.SelectedItem).DemolishRoom();
+
             bindingSource.ResetBindings(false);
         }
 

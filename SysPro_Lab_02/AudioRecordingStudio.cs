@@ -104,7 +104,15 @@ namespace SysPro_Lab_02
         // rooms
         public bool AddRoom()
         {
-            int instrumentsMissing = NumberOfRooms * 2 - NumberOfInstruments;
+            int instrumentsMissing = (NumberOfRooms + 1) * 2 - NumberOfInstruments;
+
+            if (instrumentsMissing < 0)
+                instrumentsMissing = 0;
+
+            int workersMissing = (NumberOfRooms + 1) * 2 - NumberOfWorkers;
+
+            if (workersMissing < 0)
+                workersMissing = 0;
 
             float totalCost = roomCost + instrumentCost * instrumentsMissing;
 
@@ -114,6 +122,7 @@ namespace SysPro_Lab_02
             AvailableMoney -= totalCost;
             NumberOfRooms++;
             NumberOfInstruments += instrumentsMissing;
+            NumberOfWorkers += workersMissing;
 
             return true;
         }
