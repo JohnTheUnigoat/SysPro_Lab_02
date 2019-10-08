@@ -71,9 +71,13 @@ namespace SysPro_Lab_02
             NumberOfWorkers++;
         }
 
-        public void FireWorker()
+        public bool FireWorker()
         {
+            if (NumberOfWorkers == 0)
+                return false;
+
             NumberOfWorkers--;
+            return true;
         }
 
         // instruments
@@ -88,9 +92,13 @@ namespace SysPro_Lab_02
             return true;
         }
 
-        public void ThrowAwayInstrument()
+        public bool ThrowAwayInstrument()
         {
+            if (NumberOfInstruments == 0)
+                return false;
+
             NumberOfInstruments--;
+            return true;
         }
 
         // rooms
@@ -134,7 +142,7 @@ namespace SysPro_Lab_02
 
         public override string ToString()
         {
-            return Name + ' ' + Adress;
+            return '"' + Name + "\" - " + Adress;
         }
 
         public object Clone()
