@@ -176,6 +176,7 @@
             // FieldWorkers
             // 
             this.FieldWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FieldWorkers.Enabled = false;
             this.FieldWorkers.Location = new System.Drawing.Point(109, 93);
             this.FieldWorkers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldWorkers.Name = "FieldWorkers";
@@ -277,7 +278,7 @@
             // 
             this.FieldAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldAdress.Enabled = false;
-            this.FieldAdress.Location = new System.Drawing.Point(109, 63);
+            this.FieldAdress.Location = new System.Drawing.Point(109, 64);
             this.FieldAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldAdress.Name = "FieldAdress";
             this.FieldAdress.Size = new System.Drawing.Size(101, 22);
@@ -362,6 +363,7 @@
             this.SetName.TabIndex = 23;
             this.SetName.Text = "Set";
             this.SetName.UseVisualStyleBackColor = true;
+            this.SetName.Click += new System.EventHandler(this.SetName_Click);
             // 
             // FieldWorkerWage
             // 

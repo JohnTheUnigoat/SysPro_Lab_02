@@ -12,13 +12,22 @@ namespace SysPro_Lab_02
 {
     public partial class Form1 : Form
     {
-        private BindingSource bindingSource;
+        private List<AudioRecordingStudio> objectsList;
+
+        private BindingSource selectedObjectBinding;
+        private BindingSource createdObjectsBinding;
 
         public Form1()
         {
             InitializeComponent();
 
-            bindingSource = new BindingSource();
+            objectsList = new List<AudioRecordingStudio>();
+
+            selectedObjectBinding = new BindingSource();
+            createdObjectsBinding = new BindingSource();
+
+            createdObjectsBinding.DataSource = objectsList;
+            CreatedObjects.DataSource = createdObjectsBinding;
         }
 
         private void SwitchButtons()
@@ -51,7 +60,7 @@ namespace SysPro_Lab_02
 
         private void ButtonAdd_Click(object sender, EventArgs e)
         {
-            if (CreatedObjects.Items.Count == 0)
+            if (objectsList.Count == 0)
                 SwitchButtons();
 
             var audioStudio = new AudioRecordingStudio(
@@ -61,9 +70,11 @@ namespace SysPro_Lab_02
                 (float)ConstructorRecordCost.Value,
                 (int)ConstructorRecordDuration.Value);
 
-            CreatedObjects.Items.Add(audioStudio);
+            objectsList.Add(audioStudio);
+            createdObjectsBinding.ResetBindings(true);
 
             CreatedObjects.SelectedIndex = CreatedObjects.Items.Count - 1;
+            SelectedClassChanged(this, new EventArgs());
 
             ConstructorName.Clear();
             ConstructorAdress.Clear();
@@ -74,55 +85,62 @@ namespace SysPro_Lab_02
 
         private void SelectedClassChanged(object sender, EventArgs e)
         {
-            bindingSource.DataSource = CreatedObjects.SelectedItem;
+
+            if (objectsList.Count == 0)
+            {
+                selectedObjectBinding.Clear();
+                SwitchButtons();
+            }
+            else
+                selectedObjectBinding.DataSource = CreatedObjects.SelectedItem;
 
             FieldName.DataBindings.Clear();
-            FieldName.DataBindings.Add("Text", bindingSource, "Name");
+            FieldName.DataBindings.Add("Text", selectedObjectBinding, "Name");
 
             FieldAdress.DataBindings.Clear();
-            FieldAdress.DataBindings.Add("Text", bindingSource, "Adress");
+            FieldAdress.DataBindings.Add("Text", selectedObjectBinding, "Adress");
 
             FieldWorkers.DataBindings.Clear();
-            FieldWorkers.DataBindings.Add("Text", bindingSource, "NumberOfWorkers");
+            FieldWorkers.DataBindings.Add("Text", selectedObjectBinding, "NumberOfWorkers");
 
             FieldRecordCost.DataBindings.Clear();
-            FieldRecordCost.DataBindings.Add("Value", bindingSource, "TrackRecordCost");
+            FieldRecordCost.DataBindings.Add("Value", selectedObjectBinding, "TrackRecordCost");
 
             FieldRecordDuration.DataBindings.Clear();
-            FieldRecordDuration.DataBindings.Add("Value", bindingSource, "TrackRecordDuration");
+            FieldRecordDuration.DataBindings.Add("Value", selectedObjectBinding, "TrackRecordDuration");
 
             FieldWorkerWage.DataBindings.Clear();
-            FieldWorkerWage.DataBindings.Add("Value", bindingSource, "WorkerWage");
+            FieldWorkerWage.DataBindings.Add("Value", selectedObjectBinding, "WorkerWage");
 
             FieldTotalWage.DataBindings.Clear();
-            FieldTotalWage.DataBindings.Add("Text", bindingSource, "TotalWorkersWage");
+            FieldTotalWage.DataBindings.Add("Text", selectedObjectBinding, "TotalWorkersWage");
 
             FieldMoney.DataBindings.Clear();
-            FieldMoney.DataBindings.Add("Text", bindingSource, "AvailableMoney");
+            FieldMoney.DataBindings.Add("Text", selectedObjectBinding, "AvailableMoney");
 
             FieldInstrumentCount.DataBindings.Clear();
-            FieldInstrumentCount.DataBindings.Add("Text", bindingSource, "NumberOfInstruments");
+            FieldInstrumentCount.DataBindings.Add("Text", selectedObjectBinding, "NumberOfInstruments");
 
             FieldRoomCount.DataBindings.Clear();
-            FieldRoomCount.DataBindings.Add("Text", bindingSource, "NumberOfRooms");
+            FieldRoomCount.DataBindings.Add("Text", selectedObjectBinding, "NumberOfRooms");
         }
 
         private void ButtonEarn_Click(object sender, EventArgs e)
         {
             ((AudioRecordingStudio)CreatedObjects.SelectedItem).Earn((float)UpDownEarn.Value);
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButtonHire_Click(object sender, EventArgs e)
         {
             ((AudioRecordingStudio)CreatedObjects.SelectedItem).HireWorker();
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButonFire_Click(object sender, EventArgs e)
         {
             ((AudioRecordingStudio)CreatedObjects.SelectedItem).FireWorker();
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButtonAddInstruments_Click(object sender, EventArgs e)
@@ -131,13 +149,13 @@ namespace SysPro_Lab_02
             if (!((AudioRecordingStudio)CreatedObjects.SelectedItem).BuyInstruments(count))
                 MessageBox.Show("You don't have enough money!", "Error occured!");
 
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButtonThrowInstrument_Click(object sender, EventArgs e)
         {
             ((AudioRecordingStudio)CreatedObjects.SelectedItem).ThrowAwayInstrument();
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButtonAddRoom_Click(object sender, EventArgs e)
@@ -145,14 +163,14 @@ namespace SysPro_Lab_02
             if (!((AudioRecordingStudio)CreatedObjects.SelectedItem).AddRoom())
                 MessageBox.Show("You don't have enough money!", "Error occured!");
 
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButtonDemoishRoom_Click(object sender, EventArgs e)
         {
             ((AudioRecordingStudio)CreatedObjects.SelectedItem).DemolishRoom();
 
-            bindingSource.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
 
         private void ButtonClone_Click(object sender, EventArgs e)
@@ -162,7 +180,8 @@ namespace SysPro_Lab_02
             var newStudio = (AudioRecordingStudio)selected.Clone();
             newStudio.Name += " (copy)";
 
-            CreatedObjects.Items.Add(newStudio);
+            objectsList.Add(newStudio);
+            createdObjectsBinding.ResetBindings(true);
 
             CreatedObjects.SelectedIndex = CreatedObjects.Items.Count - 1;
         }
@@ -171,17 +190,16 @@ namespace SysPro_Lab_02
         {
             int previousIndex = CreatedObjects.SelectedIndex;
 
-            CreatedObjects.Items.RemoveAt(previousIndex);
+            objectsList.RemoveAt(previousIndex);
 
-            if (CreatedObjects.Items.Count == 0)
-            {
-                SwitchButtons();
-                CreatedObjects.Text = "";
-            }
-            else if (previousIndex > 0)
-                CreatedObjects.SelectedIndex = previousIndex - 1;
-            else
-                CreatedObjects.SelectedIndex = 0;
+            createdObjectsBinding.ResetBindings(true);
+        }
+
+        private void SetName_Click(object sender, EventArgs e)
+        {
+            ((AudioRecordingStudio)CreatedObjects.SelectedItem).Name = FieldName.Text;
+            createdObjectsBinding.ResetBindings(false);
+            selectedObjectBinding.ResetBindings(false);
         }
     }
 }
