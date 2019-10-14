@@ -32,27 +32,14 @@ namespace SysPro_Lab_02
 
         private void SwitchButtons()
         {
-            FieldName.Enabled = !FieldName.Enabled;
-            SetName.Enabled = !SetName.Enabled;
-            FieldAdress.Enabled = !FieldAdress.Enabled;
-            SetAdress.Enabled = !SetAdress.Enabled;
-            FieldWorkers.Enabled = !FieldWorkers.Enabled;
-            FieldRecordCost.Enabled = !FieldRecordCost.Enabled;
-            SetRecordCost.Enabled = !SetRecordCost.Enabled;
-            FieldRecordDuration.Enabled = !FieldRecordDuration.Enabled;
-            SetRecordDuration.Enabled = !SetRecordDuration.Enabled;
-            FieldWorkerWage.Enabled = !FieldWorkerWage.Enabled;
-            SetWage.Enabled = !SetWage.Enabled;
+            CreatedObjects.Enabled = !CreatedObjects.Enabled;
 
-            UpDownEarn.Enabled = !UpDownEarn.Enabled;
-            ButtonEarn.Enabled = !ButtonEarn.Enabled;
-            ButtonHire.Enabled = !ButtonHire.Enabled;
-            ButonFire.Enabled = !ButonFire.Enabled;
-            UpDownInstruments.Enabled = !UpDownInstruments.Enabled;
-            ButtonAddInstruments.Enabled = !ButtonAddInstruments.Enabled;
-            ButtonThrowInstrument.Enabled = !ButtonThrowInstrument.Enabled;
-            ButtonAddRoom.Enabled = !ButtonAddRoom.Enabled;
-            ButtonDemoishRoom.Enabled = !ButtonDemoishRoom.Enabled;
+            GroupData.Enabled = !GroupData.Enabled;
+
+            GroupMoney.Enabled = !GroupMoney.Enabled;
+            GroupWorkers.Enabled = !GroupWorkers.Enabled;
+            GroupInstruments.Enabled = !GroupInstruments.Enabled;
+            GroupRooms.Enabled = !GroupRooms.Enabled;
 
             ButtonClone.Enabled = !ButtonClone.Enabled;
             ButtonDelete.Enabled = !ButtonDelete.Enabled;

@@ -71,7 +71,7 @@
             this.ButtonThrowInstrument = new System.Windows.Forms.Button();
             this.ButtonAddInstruments = new System.Windows.Forms.Button();
             this.UpDownInstruments = new System.Windows.Forms.NumericUpDown();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.GroupRooms = new System.Windows.Forms.GroupBox();
             this.ButtonAddRoom = new System.Windows.Forms.Button();
             this.ButtonDemoishRoom = new System.Windows.Forms.Button();
             this.ButtonClone = new System.Windows.Forms.Button();
@@ -92,7 +92,7 @@
             this.GroupWorkers.SuspendLayout();
             this.GroupInstruments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UpDownInstruments)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.GroupRooms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConstructorRecordCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConstructorRecordDuration)).BeginInit();
             this.SuspendLayout();
@@ -124,6 +124,7 @@
             this.GroupData.Controls.Add(this.FieldWorkerWage);
             this.GroupData.Controls.Add(this.FieldRecordDuration);
             this.GroupData.Controls.Add(this.FieldRecordCost);
+            this.GroupData.Enabled = false;
             this.GroupData.Location = new System.Drawing.Point(6, 42);
             this.GroupData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupData.Name = "GroupData";
@@ -176,7 +177,6 @@
             // FieldWorkers
             // 
             this.FieldWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldWorkers.Enabled = false;
             this.FieldWorkers.Location = new System.Drawing.Point(109, 93);
             this.FieldWorkers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldWorkers.Name = "FieldWorkers";
@@ -277,7 +277,6 @@
             // FieldAdress
             // 
             this.FieldAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldAdress.Enabled = false;
             this.FieldAdress.Location = new System.Drawing.Point(109, 64);
             this.FieldAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldAdress.Name = "FieldAdress";
@@ -287,7 +286,6 @@
             // FieldName
             // 
             this.FieldName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FieldName.Enabled = false;
             this.FieldName.Location = new System.Drawing.Point(109, 37);
             this.FieldName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldName.Name = "FieldName";
@@ -307,7 +305,6 @@
             // SetWage
             // 
             this.SetWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetWage.Enabled = false;
             this.SetWage.Location = new System.Drawing.Point(217, 177);
             this.SetWage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetWage.Name = "SetWage";
@@ -319,7 +316,6 @@
             // SetRecordDuration
             // 
             this.SetRecordDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRecordDuration.Enabled = false;
             this.SetRecordDuration.Location = new System.Drawing.Point(217, 149);
             this.SetRecordDuration.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetRecordDuration.Name = "SetRecordDuration";
@@ -331,7 +327,6 @@
             // SetRecordCost
             // 
             this.SetRecordCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRecordCost.Enabled = false;
             this.SetRecordCost.Location = new System.Drawing.Point(217, 121);
             this.SetRecordCost.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetRecordCost.Name = "SetRecordCost";
@@ -343,7 +338,6 @@
             // SetAdress
             // 
             this.SetAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetAdress.Enabled = false;
             this.SetAdress.Location = new System.Drawing.Point(217, 65);
             this.SetAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetAdress.Name = "SetAdress";
@@ -355,7 +349,6 @@
             // SetName
             // 
             this.SetName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetName.Enabled = false;
             this.SetName.Location = new System.Drawing.Point(217, 37);
             this.SetName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetName.Name = "SetName";
@@ -369,7 +362,6 @@
             // 
             this.FieldWorkerWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldWorkerWage.DecimalPlaces = 2;
-            this.FieldWorkerWage.Enabled = false;
             this.FieldWorkerWage.Increment = new decimal(new int[] {
             10,
             0,
@@ -390,7 +382,6 @@
             // 
             this.FieldRecordDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldRecordDuration.DecimalPlaces = 2;
-            this.FieldRecordDuration.Enabled = false;
             this.FieldRecordDuration.Increment = new decimal(new int[] {
             10,
             0,
@@ -411,7 +402,6 @@
             // 
             this.FieldRecordCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldRecordCost.DecimalPlaces = 2;
-            this.FieldRecordCost.Enabled = false;
             this.FieldRecordCost.Increment = new decimal(new int[] {
             10,
             0,
@@ -433,6 +423,7 @@
             this.GroupMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupMoney.Controls.Add(this.ButtonEarn);
             this.GroupMoney.Controls.Add(this.UpDownEarn);
+            this.GroupMoney.Enabled = false;
             this.GroupMoney.Location = new System.Drawing.Point(298, 113);
             this.GroupMoney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupMoney.Name = "GroupMoney";
@@ -444,7 +435,6 @@
             // 
             // ButtonEarn
             // 
-            this.ButtonEarn.Enabled = false;
             this.ButtonEarn.Location = new System.Drawing.Point(86, 21);
             this.ButtonEarn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonEarn.Name = "ButtonEarn";
@@ -457,7 +447,6 @@
             // UpDownEarn
             // 
             this.UpDownEarn.DecimalPlaces = 2;
-            this.UpDownEarn.Enabled = false;
             this.UpDownEarn.Increment = new decimal(new int[] {
             10,
             0,
@@ -564,6 +553,7 @@
             this.GroupWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.GroupWorkers.Controls.Add(this.ButonFire);
             this.GroupWorkers.Controls.Add(this.ButtonHire);
+            this.GroupWorkers.Enabled = false;
             this.GroupWorkers.Location = new System.Drawing.Point(466, 113);
             this.GroupWorkers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupWorkers.Name = "GroupWorkers";
@@ -575,7 +565,6 @@
             // 
             // ButonFire
             // 
-            this.ButonFire.Enabled = false;
             this.ButonFire.Location = new System.Drawing.Point(116, 21);
             this.ButonFire.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButonFire.Name = "ButonFire";
@@ -587,7 +576,6 @@
             // 
             // ButtonHire
             // 
-            this.ButtonHire.Enabled = false;
             this.ButtonHire.Location = new System.Drawing.Point(6, 21);
             this.ButtonHire.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonHire.Name = "ButtonHire";
@@ -603,6 +591,7 @@
             this.GroupInstruments.Controls.Add(this.ButtonThrowInstrument);
             this.GroupInstruments.Controls.Add(this.ButtonAddInstruments);
             this.GroupInstruments.Controls.Add(this.UpDownInstruments);
+            this.GroupInstruments.Enabled = false;
             this.GroupInstruments.Location = new System.Drawing.Point(298, 183);
             this.GroupInstruments.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupInstruments.Name = "GroupInstruments";
@@ -614,7 +603,6 @@
             // 
             // ButtonThrowInstrument
             // 
-            this.ButtonThrowInstrument.Enabled = false;
             this.ButtonThrowInstrument.Location = new System.Drawing.Point(257, 17);
             this.ButtonThrowInstrument.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonThrowInstrument.Name = "ButtonThrowInstrument";
@@ -626,7 +614,6 @@
             // 
             // ButtonAddInstruments
             // 
-            this.ButtonAddInstruments.Enabled = false;
             this.ButtonAddInstruments.Location = new System.Drawing.Point(85, 17);
             this.ButtonAddInstruments.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAddInstruments.Name = "ButtonAddInstruments";
@@ -638,7 +625,6 @@
             // 
             // UpDownInstruments
             // 
-            this.UpDownInstruments.Enabled = false;
             this.UpDownInstruments.Location = new System.Drawing.Point(6, 25);
             this.UpDownInstruments.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.UpDownInstruments.Maximum = new decimal(new int[] {
@@ -660,23 +646,23 @@
             0,
             0});
             // 
-            // groupBox2
+            // GroupRooms
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.ButtonAddRoom);
-            this.groupBox2.Controls.Add(this.ButtonDemoishRoom);
-            this.groupBox2.Location = new System.Drawing.Point(298, 253);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox2.Size = new System.Drawing.Size(406, 63);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Rooms";
+            this.GroupRooms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.GroupRooms.Controls.Add(this.ButtonAddRoom);
+            this.GroupRooms.Controls.Add(this.ButtonDemoishRoom);
+            this.GroupRooms.Enabled = false;
+            this.GroupRooms.Location = new System.Drawing.Point(298, 253);
+            this.GroupRooms.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.GroupRooms.Name = "GroupRooms";
+            this.GroupRooms.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.GroupRooms.Size = new System.Drawing.Size(406, 63);
+            this.GroupRooms.TabIndex = 11;
+            this.GroupRooms.TabStop = false;
+            this.GroupRooms.Text = "Rooms";
             // 
             // ButtonAddRoom
             // 
-            this.ButtonAddRoom.Enabled = false;
             this.ButtonAddRoom.Location = new System.Drawing.Point(6, 21);
             this.ButtonAddRoom.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAddRoom.Name = "ButtonAddRoom";
@@ -688,7 +674,6 @@
             // 
             // ButtonDemoishRoom
             // 
-            this.ButtonDemoishRoom.Enabled = false;
             this.ButtonDemoishRoom.Location = new System.Drawing.Point(207, 21);
             this.ButtonDemoishRoom.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonDemoishRoom.Name = "ButtonDemoishRoom";
@@ -786,6 +771,7 @@
             // 
             // CreatedObjects
             // 
+            this.CreatedObjects.Enabled = false;
             this.CreatedObjects.FormattingEnabled = true;
             this.CreatedObjects.Location = new System.Drawing.Point(6, 13);
             this.CreatedObjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -819,7 +805,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ConstructorRecordCost);
             this.Controls.Add(this.ButtonClone);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.GroupRooms);
             this.Controls.Add(this.GroupInstruments);
             this.Controls.Add(this.GroupWorkers);
             this.Controls.Add(this.ButtonAdd);
@@ -850,7 +836,7 @@
             this.GroupWorkers.ResumeLayout(false);
             this.GroupInstruments.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.UpDownInstruments)).EndInit();
-            this.groupBox2.ResumeLayout(false);
+            this.GroupRooms.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ConstructorRecordCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConstructorRecordDuration)).EndInit();
             this.ResumeLayout(false);
@@ -871,7 +857,7 @@
         private System.Windows.Forms.Button ButtonAdd;
         private System.Windows.Forms.GroupBox GroupWorkers;
         private System.Windows.Forms.GroupBox GroupInstruments;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox GroupRooms;
         private System.Windows.Forms.Button ButtonEarn;
         private System.Windows.Forms.NumericUpDown UpDownEarn;
         private System.Windows.Forms.Button ButonFire;
