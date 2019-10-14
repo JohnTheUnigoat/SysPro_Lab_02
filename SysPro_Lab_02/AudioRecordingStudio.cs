@@ -127,12 +127,13 @@ namespace SysPro_Lab_02
             return true;
         }
 
-        public void DemolishRoom()
+        public bool DemolishRoom()
         {
             if (NumberOfRooms == 0)
-                throw new OperationCanceledException("No more rooms to demolish!");
+                return false;
 
             NumberOfRooms--;
+            return true;
         }
 
         public static AudioRecordingStudio operator ++(AudioRecordingStudio a)
