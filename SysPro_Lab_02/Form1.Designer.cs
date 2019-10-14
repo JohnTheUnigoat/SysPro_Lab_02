@@ -130,7 +130,7 @@
             this.GroupData.Name = "GroupData";
             this.GroupData.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupData.Size = new System.Drawing.Size(285, 327);
-            this.GroupData.TabIndex = 0;
+            this.GroupData.TabIndex = 7;
             this.GroupData.TabStop = false;
             this.GroupData.Text = "Data";
             // 
@@ -142,7 +142,7 @@
             this.FieldRoomCount.Name = "FieldRoomCount";
             this.FieldRoomCount.ReadOnly = true;
             this.FieldRoomCount.Size = new System.Drawing.Size(101, 22);
-            this.FieldRoomCount.TabIndex = 48;
+            this.FieldRoomCount.TabIndex = 14;
             // 
             // FieldInstrumentCount
             // 
@@ -152,7 +152,7 @@
             this.FieldInstrumentCount.Name = "FieldInstrumentCount";
             this.FieldInstrumentCount.ReadOnly = true;
             this.FieldInstrumentCount.Size = new System.Drawing.Size(101, 22);
-            this.FieldInstrumentCount.TabIndex = 47;
+            this.FieldInstrumentCount.TabIndex = 13;
             // 
             // FieldMoney
             // 
@@ -162,7 +162,7 @@
             this.FieldMoney.Name = "FieldMoney";
             this.FieldMoney.ReadOnly = true;
             this.FieldMoney.Size = new System.Drawing.Size(101, 22);
-            this.FieldMoney.TabIndex = 46;
+            this.FieldMoney.TabIndex = 12;
             // 
             // FieldTotalWage
             // 
@@ -172,7 +172,7 @@
             this.FieldTotalWage.Name = "FieldTotalWage";
             this.FieldTotalWage.ReadOnly = true;
             this.FieldTotalWage.Size = new System.Drawing.Size(101, 22);
-            this.FieldTotalWage.TabIndex = 45;
+            this.FieldTotalWage.TabIndex = 11;
             // 
             // FieldWorkers
             // 
@@ -182,7 +182,7 @@
             this.FieldWorkers.Name = "FieldWorkers";
             this.FieldWorkers.ReadOnly = true;
             this.FieldWorkers.Size = new System.Drawing.Size(101, 22);
-            this.FieldWorkers.TabIndex = 44;
+            this.FieldWorkers.TabIndex = 4;
             // 
             // label11
             // 
@@ -281,7 +281,7 @@
             this.FieldAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldAdress.Name = "FieldAdress";
             this.FieldAdress.Size = new System.Drawing.Size(101, 22);
-            this.FieldAdress.TabIndex = 34;
+            this.FieldAdress.TabIndex = 2;
             // 
             // FieldName
             // 
@@ -290,7 +290,7 @@
             this.FieldName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldName.Name = "FieldName";
             this.FieldName.Size = new System.Drawing.Size(101, 22);
-            this.FieldName.TabIndex = 22;
+            this.FieldName.TabIndex = 0;
             // 
             // label3
             // 
@@ -309,7 +309,7 @@
             this.SetWage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetWage.Name = "SetWage";
             this.SetWage.Size = new System.Drawing.Size(62, 21);
-            this.SetWage.TabIndex = 29;
+            this.SetWage.TabIndex = 10;
             this.SetWage.Text = "Set";
             this.SetWage.UseVisualStyleBackColor = true;
             // 
@@ -320,7 +320,7 @@
             this.SetRecordDuration.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetRecordDuration.Name = "SetRecordDuration";
             this.SetRecordDuration.Size = new System.Drawing.Size(62, 21);
-            this.SetRecordDuration.TabIndex = 27;
+            this.SetRecordDuration.TabIndex = 8;
             this.SetRecordDuration.Text = "Set";
             this.SetRecordDuration.UseVisualStyleBackColor = true;
             // 
@@ -331,7 +331,7 @@
             this.SetRecordCost.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetRecordCost.Name = "SetRecordCost";
             this.SetRecordCost.Size = new System.Drawing.Size(62, 21);
-            this.SetRecordCost.TabIndex = 26;
+            this.SetRecordCost.TabIndex = 6;
             this.SetRecordCost.Text = "Set";
             this.SetRecordCost.UseVisualStyleBackColor = true;
             // 
@@ -342,7 +342,7 @@
             this.SetAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetAdress.Name = "SetAdress";
             this.SetAdress.Size = new System.Drawing.Size(62, 21);
-            this.SetAdress.TabIndex = 24;
+            this.SetAdress.TabIndex = 3;
             this.SetAdress.Text = "Set";
             this.SetAdress.UseVisualStyleBackColor = true;
             // 
@@ -353,7 +353,7 @@
             this.SetName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.SetName.Name = "SetName";
             this.SetName.Size = new System.Drawing.Size(62, 21);
-            this.SetName.TabIndex = 23;
+            this.SetName.TabIndex = 1;
             this.SetName.Text = "Set";
             this.SetName.UseVisualStyleBackColor = true;
             this.SetName.Click += new System.EventHandler(this.SetName_Click);
@@ -376,7 +376,7 @@
             0});
             this.FieldWorkerWage.Name = "FieldWorkerWage";
             this.FieldWorkerWage.Size = new System.Drawing.Size(100, 22);
-            this.FieldWorkerWage.TabIndex = 18;
+            this.FieldWorkerWage.TabIndex = 9;
             // 
             // FieldRecordDuration
             // 
@@ -396,7 +396,7 @@
             0});
             this.FieldRecordDuration.Name = "FieldRecordDuration";
             this.FieldRecordDuration.Size = new System.Drawing.Size(100, 22);
-            this.FieldRecordDuration.TabIndex = 17;
+            this.FieldRecordDuration.TabIndex = 7;
             // 
             // FieldRecordCost
             // 
@@ -416,7 +416,7 @@
             0});
             this.FieldRecordCost.Name = "FieldRecordCost";
             this.FieldRecordCost.Size = new System.Drawing.Size(100, 22);
-            this.FieldRecordCost.TabIndex = 16;
+            this.FieldRecordCost.TabIndex = 5;
             // 
             // GroupMoney
             // 
@@ -429,7 +429,7 @@
             this.GroupMoney.Name = "GroupMoney";
             this.GroupMoney.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupMoney.Size = new System.Drawing.Size(162, 63);
-            this.GroupMoney.TabIndex = 2;
+            this.GroupMoney.TabIndex = 8;
             this.GroupMoney.TabStop = false;
             this.GroupMoney.Text = "Money";
             // 
@@ -439,7 +439,7 @@
             this.ButtonEarn.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonEarn.Name = "ButtonEarn";
             this.ButtonEarn.Size = new System.Drawing.Size(71, 37);
-            this.ButtonEarn.TabIndex = 12;
+            this.ButtonEarn.TabIndex = 1;
             this.ButtonEarn.Text = "Earn";
             this.ButtonEarn.UseVisualStyleBackColor = true;
             this.ButtonEarn.Click += new System.EventHandler(this.ButtonEarn_Click);
@@ -559,7 +559,7 @@
             this.GroupWorkers.Name = "GroupWorkers";
             this.GroupWorkers.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupWorkers.Size = new System.Drawing.Size(238, 63);
-            this.GroupWorkers.TabIndex = 3;
+            this.GroupWorkers.TabIndex = 9;
             this.GroupWorkers.TabStop = false;
             this.GroupWorkers.Text = "Workers";
             // 
@@ -569,7 +569,7 @@
             this.ButonFire.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButonFire.Name = "ButonFire";
             this.ButonFire.Size = new System.Drawing.Size(116, 35);
-            this.ButonFire.TabIndex = 14;
+            this.ButonFire.TabIndex = 1;
             this.ButonFire.Text = "Fire";
             this.ButonFire.UseVisualStyleBackColor = true;
             this.ButonFire.Click += new System.EventHandler(this.ButonFire_Click);
@@ -580,7 +580,7 @@
             this.ButtonHire.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonHire.Name = "ButtonHire";
             this.ButtonHire.Size = new System.Drawing.Size(104, 35);
-            this.ButtonHire.TabIndex = 13;
+            this.ButtonHire.TabIndex = 0;
             this.ButtonHire.Text = "Hire";
             this.ButtonHire.UseVisualStyleBackColor = true;
             this.ButtonHire.Click += new System.EventHandler(this.ButtonHire_Click);
@@ -607,7 +607,7 @@
             this.ButtonThrowInstrument.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonThrowInstrument.Name = "ButtonThrowInstrument";
             this.ButtonThrowInstrument.Size = new System.Drawing.Size(143, 35);
-            this.ButtonThrowInstrument.TabIndex = 15;
+            this.ButtonThrowInstrument.TabIndex = 2;
             this.ButtonThrowInstrument.Text = "Throw away";
             this.ButtonThrowInstrument.UseVisualStyleBackColor = true;
             this.ButtonThrowInstrument.Click += new System.EventHandler(this.ButtonThrowInstrument_Click);
@@ -618,7 +618,7 @@
             this.ButtonAddInstruments.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAddInstruments.Name = "ButtonAddInstruments";
             this.ButtonAddInstruments.Size = new System.Drawing.Size(144, 35);
-            this.ButtonAddInstruments.TabIndex = 14;
+            this.ButtonAddInstruments.TabIndex = 1;
             this.ButtonAddInstruments.Text = "Add";
             this.ButtonAddInstruments.UseVisualStyleBackColor = true;
             this.ButtonAddInstruments.Click += new System.EventHandler(this.ButtonAddInstruments_Click);
@@ -639,7 +639,7 @@
             0});
             this.UpDownInstruments.Name = "UpDownInstruments";
             this.UpDownInstruments.Size = new System.Drawing.Size(73, 22);
-            this.UpDownInstruments.TabIndex = 1;
+            this.UpDownInstruments.TabIndex = 0;
             this.UpDownInstruments.Value = new decimal(new int[] {
             1,
             0,
@@ -667,7 +667,7 @@
             this.ButtonAddRoom.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAddRoom.Name = "ButtonAddRoom";
             this.ButtonAddRoom.Size = new System.Drawing.Size(193, 35);
-            this.ButtonAddRoom.TabIndex = 16;
+            this.ButtonAddRoom.TabIndex = 0;
             this.ButtonAddRoom.Text = "Add";
             this.ButtonAddRoom.UseVisualStyleBackColor = true;
             this.ButtonAddRoom.Click += new System.EventHandler(this.ButtonAddRoom_Click);
@@ -678,7 +678,7 @@
             this.ButtonDemoishRoom.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonDemoishRoom.Name = "ButtonDemoishRoom";
             this.ButtonDemoishRoom.Size = new System.Drawing.Size(193, 35);
-            this.ButtonDemoishRoom.TabIndex = 15;
+            this.ButtonDemoishRoom.TabIndex = 1;
             this.ButtonDemoishRoom.Text = "Demolish";
             this.ButtonDemoishRoom.UseVisualStyleBackColor = true;
             this.ButtonDemoishRoom.Click += new System.EventHandler(this.ButtonDemoishRoom_Click);
@@ -691,7 +691,7 @@
             this.ButtonClone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonClone.Name = "ButtonClone";
             this.ButtonClone.Size = new System.Drawing.Size(193, 35);
-            this.ButtonClone.TabIndex = 17;
+            this.ButtonClone.TabIndex = 12;
             this.ButtonClone.Text = "Clone";
             this.ButtonClone.UseVisualStyleBackColor = true;
             this.ButtonClone.Click += new System.EventHandler(this.ButtonClone_Click);
@@ -777,7 +777,7 @@
             this.CreatedObjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CreatedObjects.Name = "CreatedObjects";
             this.CreatedObjects.Size = new System.Drawing.Size(285, 22);
-            this.CreatedObjects.TabIndex = 22;
+            this.CreatedObjects.TabIndex = 6;
             this.CreatedObjects.SelectedIndexChanged += new System.EventHandler(this.SelectedClassChanged);
             // 
             // ButtonDelete
@@ -788,7 +788,7 @@
             this.ButtonDelete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.Size = new System.Drawing.Size(193, 35);
-            this.ButtonDelete.TabIndex = 23;
+            this.ButtonDelete.TabIndex = 13;
             this.ButtonDelete.Text = "Delete";
             this.ButtonDelete.UseVisualStyleBackColor = true;
             this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
