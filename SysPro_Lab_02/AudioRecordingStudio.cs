@@ -10,8 +10,8 @@ namespace SysPro_Lab_02
     {
         // static fields //
 
-        static float instrumentCost = 750.0f;
-        static float roomCost = 5500.0f;
+        static float instrumentCost = 650.0f;
+        static float roomCost = 3500.0f;
 
         // properties //
 

@@ -58,7 +58,7 @@ namespace SysPro_Lab_02
                 (int)ConstructorRecordDuration.Value);
 
             objectsList.Add(audioStudio);
-            createdObjectsBinding.ResetBindings(true);
+            createdObjectsBinding.ResetBindings(false);
 
             CreatedObjects.SelectedIndex = CreatedObjects.Items.Count - 1;
             SelectedClassChanged(this, new EventArgs());
@@ -72,7 +72,6 @@ namespace SysPro_Lab_02
 
         private void SelectedClassChanged(object sender, EventArgs e)
         {
-
             if (objectsList.Count == 0)
             {
                 selectedObjectBinding.Clear();
@@ -168,7 +167,7 @@ namespace SysPro_Lab_02
             newStudio.Name += " (copy)";
 
             objectsList.Add(newStudio);
-            createdObjectsBinding.ResetBindings(true);
+            createdObjectsBinding.ResetBindings(false);
 
             CreatedObjects.SelectedIndex = CreatedObjects.Items.Count - 1;
         }
@@ -179,7 +178,7 @@ namespace SysPro_Lab_02
 
             objectsList.RemoveAt(previousIndex);
 
-            createdObjectsBinding.ResetBindings(true);
+            createdObjectsBinding.ResetBindings(false);
         }
 
         private void SetName_Click(object sender, EventArgs e)

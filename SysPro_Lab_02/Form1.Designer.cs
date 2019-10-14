@@ -126,7 +126,7 @@
             // 
             // FieldRoomCount
             // 
-            this.FieldRoomCount.Location = new System.Drawing.Point(109, 287);
+            this.FieldRoomCount.Location = new System.Drawing.Point(109, 284);
             this.FieldRoomCount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldRoomCount.Name = "FieldRoomCount";
             this.FieldRoomCount.ReadOnly = true;
@@ -135,7 +135,7 @@
             // 
             // FieldInstrumentCount
             // 
-            this.FieldInstrumentCount.Location = new System.Drawing.Point(109, 259);
+            this.FieldInstrumentCount.Location = new System.Drawing.Point(109, 256);
             this.FieldInstrumentCount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldInstrumentCount.Name = "FieldInstrumentCount";
             this.FieldInstrumentCount.ReadOnly = true;
@@ -144,7 +144,7 @@
             // 
             // FieldMoney
             // 
-            this.FieldMoney.Location = new System.Drawing.Point(109, 231);
+            this.FieldMoney.Location = new System.Drawing.Point(109, 228);
             this.FieldMoney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldMoney.Name = "FieldMoney";
             this.FieldMoney.ReadOnly = true;
@@ -153,7 +153,7 @@
             // 
             // FieldTotalWage
             // 
-            this.FieldTotalWage.Location = new System.Drawing.Point(109, 205);
+            this.FieldTotalWage.Location = new System.Drawing.Point(109, 202);
             this.FieldTotalWage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldTotalWage.Name = "FieldTotalWage";
             this.FieldTotalWage.ReadOnly = true;
@@ -162,7 +162,7 @@
             // 
             // FieldWorkers
             // 
-            this.FieldWorkers.Location = new System.Drawing.Point(109, 93);
+            this.FieldWorkers.Location = new System.Drawing.Point(109, 90);
             this.FieldWorkers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldWorkers.Name = "FieldWorkers";
             this.FieldWorkers.ReadOnly = true;
@@ -172,7 +172,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 291);
+            this.label11.Location = new System.Drawing.Point(3, 288);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 14);
@@ -182,7 +182,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 263);
+            this.label12.Location = new System.Drawing.Point(3, 260);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(100, 14);
@@ -192,7 +192,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 237);
+            this.label7.Location = new System.Drawing.Point(3, 234);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 14);
@@ -202,7 +202,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 209);
+            this.label8.Location = new System.Drawing.Point(3, 206);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 14);
@@ -212,7 +212,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 181);
+            this.label9.Location = new System.Drawing.Point(3, 178);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 14);
@@ -222,7 +222,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 153);
+            this.label10.Location = new System.Drawing.Point(3, 150);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(93, 14);
@@ -232,7 +232,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 123);
+            this.label5.Location = new System.Drawing.Point(3, 122);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 14);
@@ -242,7 +242,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 97);
+            this.label6.Location = new System.Drawing.Point(3, 94);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 14);
@@ -252,7 +252,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 69);
+            this.label4.Location = new System.Drawing.Point(3, 66);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 14);
@@ -261,7 +261,7 @@
             // 
             // FieldAdress
             // 
-            this.FieldAdress.Location = new System.Drawing.Point(109, 64);
+            this.FieldAdress.Location = new System.Drawing.Point(109, 61);
             this.FieldAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldAdress.Name = "FieldAdress";
             this.FieldAdress.Size = new System.Drawing.Size(101, 22);
@@ -269,7 +269,7 @@
             // 
             // FieldName
             // 
-            this.FieldName.Location = new System.Drawing.Point(109, 37);
+            this.FieldName.Location = new System.Drawing.Point(109, 34);
             this.FieldName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldName.Name = "FieldName";
             this.FieldName.Size = new System.Drawing.Size(101, 22);
@@ -278,7 +278,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 41);
+            this.label3.Location = new System.Drawing.Point(3, 38);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 14);
@@ -293,7 +293,7 @@
             0,
             0,
             0});
-            this.FieldWorkerWage.Location = new System.Drawing.Point(110, 177);
+            this.FieldWorkerWage.Location = new System.Drawing.Point(110, 174);
             this.FieldWorkerWage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldWorkerWage.Maximum = new decimal(new int[] {
             5000,
@@ -312,7 +312,7 @@
             0,
             0,
             0});
-            this.FieldRecordDuration.Location = new System.Drawing.Point(110, 149);
+            this.FieldRecordDuration.Location = new System.Drawing.Point(110, 146);
             this.FieldRecordDuration.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldRecordDuration.Maximum = new decimal(new int[] {
             5000,
@@ -331,7 +331,7 @@
             0,
             0,
             0});
-            this.FieldRecordCost.Location = new System.Drawing.Point(110, 121);
+            this.FieldRecordCost.Location = new System.Drawing.Point(110, 118);
             this.FieldRecordCost.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldRecordCost.Maximum = new decimal(new int[] {
             5000,
@@ -390,10 +390,10 @@
             // ConstructorName
             // 
             this.ConstructorName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConstructorName.Location = new System.Drawing.Point(290, 25);
+            this.ConstructorName.Location = new System.Drawing.Point(290, 30);
             this.ConstructorName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorName.Name = "ConstructorName";
-            this.ConstructorName.Size = new System.Drawing.Size(108, 22);
+            this.ConstructorName.Size = new System.Drawing.Size(98, 22);
             this.ConstructorName.TabIndex = 0;
             this.ConstructorName.Tag = "ConstructorName";
             // 
@@ -401,7 +401,7 @@
             // 
             this.LabelName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelName.AutoSize = true;
-            this.LabelName.Location = new System.Drawing.Point(245, 29);
+            this.LabelName.Location = new System.Drawing.Point(249, 34);
             this.LabelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelName.Name = "LabelName";
             this.LabelName.Size = new System.Drawing.Size(39, 14);
@@ -412,7 +412,7 @@
             // 
             this.LableAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LableAdress.AutoSize = true;
-            this.LableAdress.Location = new System.Drawing.Point(244, 57);
+            this.LableAdress.Location = new System.Drawing.Point(244, 62);
             this.LableAdress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LableAdress.Name = "LableAdress";
             this.LableAdress.Size = new System.Drawing.Size(44, 14);
@@ -422,10 +422,10 @@
             // ConstructorAdress
             // 
             this.ConstructorAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConstructorAdress.Location = new System.Drawing.Point(290, 53);
+            this.ConstructorAdress.Location = new System.Drawing.Point(290, 58);
             this.ConstructorAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorAdress.Name = "ConstructorAdress";
-            this.ConstructorAdress.Size = new System.Drawing.Size(108, 22);
+            this.ConstructorAdress.Size = new System.Drawing.Size(98, 22);
             this.ConstructorAdress.TabIndex = 1;
             // 
             // ConstructorMoney
@@ -453,7 +453,7 @@
             // 
             this.LabelMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelMoney.AutoSize = true;
-            this.LabelMoney.Location = new System.Drawing.Point(448, 25);
+            this.LabelMoney.Location = new System.Drawing.Point(449, 28);
             this.LabelMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelMoney.Name = "LabelMoney";
             this.LabelMoney.Size = new System.Drawing.Size(43, 14);
@@ -503,7 +503,7 @@
             this.ButtonHire.Location = new System.Drawing.Point(6, 21);
             this.ButtonHire.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonHire.Name = "ButtonHire";
-            this.ButtonHire.Size = new System.Drawing.Size(104, 35);
+            this.ButtonHire.Size = new System.Drawing.Size(106, 35);
             this.ButtonHire.TabIndex = 0;
             this.ButtonHire.Text = "Hire";
             this.ButtonHire.UseVisualStyleBackColor = true;
@@ -527,10 +527,10 @@
             // 
             // ButtonThrowInstrument
             // 
-            this.ButtonThrowInstrument.Location = new System.Drawing.Point(257, 17);
+            this.ButtonThrowInstrument.Location = new System.Drawing.Point(244, 17);
             this.ButtonThrowInstrument.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonThrowInstrument.Name = "ButtonThrowInstrument";
-            this.ButtonThrowInstrument.Size = new System.Drawing.Size(143, 35);
+            this.ButtonThrowInstrument.Size = new System.Drawing.Size(156, 35);
             this.ButtonThrowInstrument.TabIndex = 2;
             this.ButtonThrowInstrument.Text = "Throw away";
             this.ButtonThrowInstrument.UseVisualStyleBackColor = true;
@@ -541,7 +541,7 @@
             this.ButtonAddInstruments.Location = new System.Drawing.Point(85, 17);
             this.ButtonAddInstruments.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAddInstruments.Name = "ButtonAddInstruments";
-            this.ButtonAddInstruments.Size = new System.Drawing.Size(144, 35);
+            this.ButtonAddInstruments.Size = new System.Drawing.Size(155, 35);
             this.ButtonAddInstruments.TabIndex = 1;
             this.ButtonAddInstruments.Text = "Add";
             this.ButtonAddInstruments.UseVisualStyleBackColor = true;
@@ -590,7 +590,7 @@
             this.ButtonAddRoom.Location = new System.Drawing.Point(6, 21);
             this.ButtonAddRoom.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAddRoom.Name = "ButtonAddRoom";
-            this.ButtonAddRoom.Size = new System.Drawing.Size(193, 35);
+            this.ButtonAddRoom.Size = new System.Drawing.Size(197, 35);
             this.ButtonAddRoom.TabIndex = 0;
             this.ButtonAddRoom.Text = "Add";
             this.ButtonAddRoom.UseVisualStyleBackColor = true;
@@ -614,7 +614,7 @@
             this.ButtonClone.Location = new System.Drawing.Point(247, 331);
             this.ButtonClone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonClone.Name = "ButtonClone";
-            this.ButtonClone.Size = new System.Drawing.Size(193, 35);
+            this.ButtonClone.Size = new System.Drawing.Size(197, 35);
             this.ButtonClone.TabIndex = 12;
             this.ButtonClone.Text = "Clone";
             this.ButtonClone.UseVisualStyleBackColor = true;
@@ -624,7 +624,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(421, 53);
+            this.label1.Location = new System.Drawing.Point(423, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 14);
@@ -656,7 +656,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(399, 79);
+            this.label2.Location = new System.Drawing.Point(399, 76);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 14);
@@ -748,7 +748,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Audio studios manager";
             this.GroupData.ResumeLayout(false);
             this.GroupData.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FieldWorkerWage)).EndInit();
