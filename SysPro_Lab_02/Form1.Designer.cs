@@ -46,11 +46,6 @@
             this.FieldAdress = new System.Windows.Forms.TextBox();
             this.FieldName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.SetWage = new System.Windows.Forms.Button();
-            this.SetRecordDuration = new System.Windows.Forms.Button();
-            this.SetRecordCost = new System.Windows.Forms.Button();
-            this.SetAdress = new System.Windows.Forms.Button();
-            this.SetName = new System.Windows.Forms.Button();
             this.FieldWorkerWage = new System.Windows.Forms.NumericUpDown();
             this.FieldRecordDuration = new System.Windows.Forms.NumericUpDown();
             this.FieldRecordCost = new System.Windows.Forms.NumericUpDown();
@@ -116,27 +111,21 @@
             this.GroupData.Controls.Add(this.FieldAdress);
             this.GroupData.Controls.Add(this.FieldName);
             this.GroupData.Controls.Add(this.label3);
-            this.GroupData.Controls.Add(this.SetWage);
-            this.GroupData.Controls.Add(this.SetRecordDuration);
-            this.GroupData.Controls.Add(this.SetRecordCost);
-            this.GroupData.Controls.Add(this.SetAdress);
-            this.GroupData.Controls.Add(this.SetName);
             this.GroupData.Controls.Add(this.FieldWorkerWage);
             this.GroupData.Controls.Add(this.FieldRecordDuration);
             this.GroupData.Controls.Add(this.FieldRecordCost);
             this.GroupData.Enabled = false;
-            this.GroupData.Location = new System.Drawing.Point(6, 42);
+            this.GroupData.Location = new System.Drawing.Point(11, 41);
             this.GroupData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupData.Name = "GroupData";
             this.GroupData.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.GroupData.Size = new System.Drawing.Size(285, 327);
+            this.GroupData.Size = new System.Drawing.Size(223, 327);
             this.GroupData.TabIndex = 7;
             this.GroupData.TabStop = false;
             this.GroupData.Text = "Data";
             // 
             // FieldRoomCount
             // 
-            this.FieldRoomCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldRoomCount.Location = new System.Drawing.Point(109, 287);
             this.FieldRoomCount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldRoomCount.Name = "FieldRoomCount";
@@ -146,7 +135,6 @@
             // 
             // FieldInstrumentCount
             // 
-            this.FieldInstrumentCount.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldInstrumentCount.Location = new System.Drawing.Point(109, 259);
             this.FieldInstrumentCount.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldInstrumentCount.Name = "FieldInstrumentCount";
@@ -156,7 +144,6 @@
             // 
             // FieldMoney
             // 
-            this.FieldMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldMoney.Location = new System.Drawing.Point(109, 231);
             this.FieldMoney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldMoney.Name = "FieldMoney";
@@ -166,7 +153,6 @@
             // 
             // FieldTotalWage
             // 
-            this.FieldTotalWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldTotalWage.Location = new System.Drawing.Point(109, 205);
             this.FieldTotalWage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldTotalWage.Name = "FieldTotalWage";
@@ -176,7 +162,6 @@
             // 
             // FieldWorkers
             // 
-            this.FieldWorkers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldWorkers.Location = new System.Drawing.Point(109, 93);
             this.FieldWorkers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldWorkers.Name = "FieldWorkers";
@@ -276,7 +261,6 @@
             // 
             // FieldAdress
             // 
-            this.FieldAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldAdress.Location = new System.Drawing.Point(109, 64);
             this.FieldAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldAdress.Name = "FieldAdress";
@@ -285,7 +269,6 @@
             // 
             // FieldName
             // 
-            this.FieldName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldName.Location = new System.Drawing.Point(109, 37);
             this.FieldName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.FieldName.Name = "FieldName";
@@ -302,65 +285,8 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Name";
             // 
-            // SetWage
-            // 
-            this.SetWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetWage.Location = new System.Drawing.Point(217, 177);
-            this.SetWage.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.SetWage.Name = "SetWage";
-            this.SetWage.Size = new System.Drawing.Size(62, 21);
-            this.SetWage.TabIndex = 10;
-            this.SetWage.Text = "Set";
-            this.SetWage.UseVisualStyleBackColor = true;
-            // 
-            // SetRecordDuration
-            // 
-            this.SetRecordDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRecordDuration.Location = new System.Drawing.Point(217, 149);
-            this.SetRecordDuration.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.SetRecordDuration.Name = "SetRecordDuration";
-            this.SetRecordDuration.Size = new System.Drawing.Size(62, 21);
-            this.SetRecordDuration.TabIndex = 8;
-            this.SetRecordDuration.Text = "Set";
-            this.SetRecordDuration.UseVisualStyleBackColor = true;
-            // 
-            // SetRecordCost
-            // 
-            this.SetRecordCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetRecordCost.Location = new System.Drawing.Point(217, 121);
-            this.SetRecordCost.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.SetRecordCost.Name = "SetRecordCost";
-            this.SetRecordCost.Size = new System.Drawing.Size(62, 21);
-            this.SetRecordCost.TabIndex = 6;
-            this.SetRecordCost.Text = "Set";
-            this.SetRecordCost.UseVisualStyleBackColor = true;
-            // 
-            // SetAdress
-            // 
-            this.SetAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetAdress.Location = new System.Drawing.Point(217, 65);
-            this.SetAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.SetAdress.Name = "SetAdress";
-            this.SetAdress.Size = new System.Drawing.Size(62, 21);
-            this.SetAdress.TabIndex = 3;
-            this.SetAdress.Text = "Set";
-            this.SetAdress.UseVisualStyleBackColor = true;
-            // 
-            // SetName
-            // 
-            this.SetName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SetName.Location = new System.Drawing.Point(217, 37);
-            this.SetName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.SetName.Name = "SetName";
-            this.SetName.Size = new System.Drawing.Size(62, 21);
-            this.SetName.TabIndex = 1;
-            this.SetName.Text = "Set";
-            this.SetName.UseVisualStyleBackColor = true;
-            this.SetName.Click += new System.EventHandler(this.SetName_Click);
-            // 
             // FieldWorkerWage
             // 
-            this.FieldWorkerWage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldWorkerWage.DecimalPlaces = 2;
             this.FieldWorkerWage.Increment = new decimal(new int[] {
             10,
@@ -380,7 +306,6 @@
             // 
             // FieldRecordDuration
             // 
-            this.FieldRecordDuration.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldRecordDuration.DecimalPlaces = 2;
             this.FieldRecordDuration.Increment = new decimal(new int[] {
             10,
@@ -400,7 +325,6 @@
             // 
             // FieldRecordCost
             // 
-            this.FieldRecordCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.FieldRecordCost.DecimalPlaces = 2;
             this.FieldRecordCost.Increment = new decimal(new int[] {
             10,
@@ -424,7 +348,7 @@
             this.GroupMoney.Controls.Add(this.ButtonEarn);
             this.GroupMoney.Controls.Add(this.UpDownEarn);
             this.GroupMoney.Enabled = false;
-            this.GroupMoney.Location = new System.Drawing.Point(298, 113);
+            this.GroupMoney.Location = new System.Drawing.Point(241, 113);
             this.GroupMoney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupMoney.Name = "GroupMoney";
             this.GroupMoney.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -466,7 +390,7 @@
             // ConstructorName
             // 
             this.ConstructorName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConstructorName.Location = new System.Drawing.Point(347, 25);
+            this.ConstructorName.Location = new System.Drawing.Point(290, 25);
             this.ConstructorName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorName.Name = "ConstructorName";
             this.ConstructorName.Size = new System.Drawing.Size(108, 22);
@@ -477,7 +401,7 @@
             // 
             this.LabelName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelName.AutoSize = true;
-            this.LabelName.Location = new System.Drawing.Point(302, 29);
+            this.LabelName.Location = new System.Drawing.Point(245, 29);
             this.LabelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelName.Name = "LabelName";
             this.LabelName.Size = new System.Drawing.Size(39, 14);
@@ -488,7 +412,7 @@
             // 
             this.LableAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LableAdress.AutoSize = true;
-            this.LableAdress.Location = new System.Drawing.Point(301, 57);
+            this.LableAdress.Location = new System.Drawing.Point(244, 57);
             this.LableAdress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LableAdress.Name = "LableAdress";
             this.LableAdress.Size = new System.Drawing.Size(44, 14);
@@ -498,7 +422,7 @@
             // ConstructorAdress
             // 
             this.ConstructorAdress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConstructorAdress.Location = new System.Drawing.Point(347, 53);
+            this.ConstructorAdress.Location = new System.Drawing.Point(290, 53);
             this.ConstructorAdress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorAdress.Name = "ConstructorAdress";
             this.ConstructorAdress.Size = new System.Drawing.Size(108, 22);
@@ -513,7 +437,7 @@
             0,
             0,
             0});
-            this.ConstructorMoney.Location = new System.Drawing.Point(551, 25);
+            this.ConstructorMoney.Location = new System.Drawing.Point(494, 25);
             this.ConstructorMoney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorMoney.Maximum = new decimal(new int[] {
             100000,
@@ -529,7 +453,7 @@
             // 
             this.LabelMoney.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.LabelMoney.AutoSize = true;
-            this.LabelMoney.Location = new System.Drawing.Point(505, 25);
+            this.LabelMoney.Location = new System.Drawing.Point(448, 25);
             this.LabelMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LabelMoney.Name = "LabelMoney";
             this.LabelMoney.Size = new System.Drawing.Size(43, 14);
@@ -539,7 +463,7 @@
             // ButtonAdd
             // 
             this.ButtonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonAdd.Location = new System.Drawing.Point(621, 23);
+            this.ButtonAdd.Location = new System.Drawing.Point(564, 23);
             this.ButtonAdd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonAdd.Name = "ButtonAdd";
             this.ButtonAdd.Size = new System.Drawing.Size(77, 73);
@@ -554,7 +478,7 @@
             this.GroupWorkers.Controls.Add(this.ButonFire);
             this.GroupWorkers.Controls.Add(this.ButtonHire);
             this.GroupWorkers.Enabled = false;
-            this.GroupWorkers.Location = new System.Drawing.Point(466, 113);
+            this.GroupWorkers.Location = new System.Drawing.Point(409, 113);
             this.GroupWorkers.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupWorkers.Name = "GroupWorkers";
             this.GroupWorkers.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -592,7 +516,7 @@
             this.GroupInstruments.Controls.Add(this.ButtonAddInstruments);
             this.GroupInstruments.Controls.Add(this.UpDownInstruments);
             this.GroupInstruments.Enabled = false;
-            this.GroupInstruments.Location = new System.Drawing.Point(298, 183);
+            this.GroupInstruments.Location = new System.Drawing.Point(241, 183);
             this.GroupInstruments.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupInstruments.Name = "GroupInstruments";
             this.GroupInstruments.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -652,7 +576,7 @@
             this.GroupRooms.Controls.Add(this.ButtonAddRoom);
             this.GroupRooms.Controls.Add(this.ButtonDemoishRoom);
             this.GroupRooms.Enabled = false;
-            this.GroupRooms.Location = new System.Drawing.Point(298, 253);
+            this.GroupRooms.Location = new System.Drawing.Point(241, 253);
             this.GroupRooms.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.GroupRooms.Name = "GroupRooms";
             this.GroupRooms.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
@@ -687,7 +611,7 @@
             // 
             this.ButtonClone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonClone.Enabled = false;
-            this.ButtonClone.Location = new System.Drawing.Point(304, 331);
+            this.ButtonClone.Location = new System.Drawing.Point(247, 331);
             this.ButtonClone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonClone.Name = "ButtonClone";
             this.ButtonClone.Size = new System.Drawing.Size(193, 35);
@@ -700,7 +624,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(478, 53);
+            this.label1.Location = new System.Drawing.Point(421, 53);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 14);
@@ -716,7 +640,7 @@
             0,
             0,
             0});
-            this.ConstructorRecordCost.Location = new System.Drawing.Point(551, 49);
+            this.ConstructorRecordCost.Location = new System.Drawing.Point(494, 49);
             this.ConstructorRecordCost.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorRecordCost.Maximum = new decimal(new int[] {
             2000,
@@ -732,7 +656,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(456, 79);
+            this.label2.Location = new System.Drawing.Point(399, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 14);
@@ -747,7 +671,7 @@
             0,
             0,
             0});
-            this.ConstructorRecordDuration.Location = new System.Drawing.Point(551, 73);
+            this.ConstructorRecordDuration.Location = new System.Drawing.Point(494, 73);
             this.ConstructorRecordDuration.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ConstructorRecordDuration.Maximum = new decimal(new int[] {
             720,
@@ -776,7 +700,7 @@
             this.CreatedObjects.Location = new System.Drawing.Point(6, 13);
             this.CreatedObjects.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.CreatedObjects.Name = "CreatedObjects";
-            this.CreatedObjects.Size = new System.Drawing.Size(285, 22);
+            this.CreatedObjects.Size = new System.Drawing.Size(228, 22);
             this.CreatedObjects.TabIndex = 6;
             this.CreatedObjects.SelectedIndexChanged += new System.EventHandler(this.SelectedClassChanged);
             // 
@@ -784,7 +708,7 @@
             // 
             this.ButtonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonDelete.Enabled = false;
-            this.ButtonDelete.Location = new System.Drawing.Point(505, 331);
+            this.ButtonDelete.Location = new System.Drawing.Point(448, 331);
             this.ButtonDelete.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ButtonDelete.Name = "ButtonDelete";
             this.ButtonDelete.Size = new System.Drawing.Size(193, 35);
@@ -797,7 +721,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 383);
+            this.ClientSize = new System.Drawing.Size(655, 383);
             this.Controls.Add(this.ButtonDelete);
             this.Controls.Add(this.CreatedObjects);
             this.Controls.Add(this.label2);
@@ -871,11 +795,6 @@
         private System.Windows.Forms.NumericUpDown FieldRecordCost;
         private System.Windows.Forms.NumericUpDown FieldWorkerWage;
         private System.Windows.Forms.NumericUpDown FieldRecordDuration;
-        private System.Windows.Forms.Button SetWage;
-        private System.Windows.Forms.Button SetRecordDuration;
-        private System.Windows.Forms.Button SetRecordCost;
-        private System.Windows.Forms.Button SetAdress;
-        private System.Windows.Forms.Button SetName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown ConstructorRecordCost;
         private System.Windows.Forms.Label label2;
