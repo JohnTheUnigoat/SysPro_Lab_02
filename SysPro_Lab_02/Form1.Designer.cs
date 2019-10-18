@@ -702,7 +702,6 @@
             this.CreatedObjects.Name = "CreatedObjects";
             this.CreatedObjects.Size = new System.Drawing.Size(228, 22);
             this.CreatedObjects.TabIndex = 6;
-            this.CreatedObjects.SelectedIndexChanged += new System.EventHandler(this.SelectedClassChanged);
             // 
             // ButtonDelete
             // 
